@@ -1,6 +1,18 @@
+import Figures.*;
+
+import java.util.ArrayList;
+
 class Main{
 
     public static void main(String[] args) {
-        System.out.println("Moinsen!");
+
+        Queen testQueen = new Queen(20);
+        ArrayList<Integer> testMoves = testQueen.listMoves();
+        System.out.println(testMoves.size());
+
+        for(int i = 0; i < testMoves.size(); i++) {
+                System.out.println(testMoves.get(i));
+        }
     }
+
 }
