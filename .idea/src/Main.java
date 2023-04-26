@@ -6,7 +6,7 @@ class Main{
 
     public static void main(String[] args) {
 
-        Queen testQueen = new Queen(20);
+        Queen testQueen = new Queen(true, 20);
         ArrayList<Integer> testMoves = testQueen.listMoves();
         System.out.println(testMoves.size());
 

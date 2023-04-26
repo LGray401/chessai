@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public abstract class Figure {
 
-    int value;
-    boolean isBlack;
-    int position;
+    protected int value;
+    protected boolean isBlack;
+    protected int position;
 
-    ArrayList<Integer> possibleMoves;
+    protected ArrayList<Integer> possibleMoves;
 }

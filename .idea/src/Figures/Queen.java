@@ -2,6 +2,7 @@ package Figures;
 // import Figures.Figure;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Queen  {
 
@@ -11,16 +12,19 @@ public class Queen  {
 
     public ArrayList<Integer> possibleMoves;
 
+    public Queen(boolean isblack, int position) {
+        this.value = 90;
+        this.isBlack = isblack;
+        this.position = position;
+        this.possibleMoves = new ArrayList<>(Arrays.asList(1,-1,8,-8,7,-7,9,-9));
+    }
+
     static int[] helperNS = {-8,8};
     static int[] helperNwSw = {-9,7};
     static int[] helperNoSo = {-7,9};
     static int[] leftBorder = {0,8,16,24,32,40,48,56};
     static int[] rightBorder = {7,15,23,31,39,47,55,63};
 
-    public Queen(int position) {
-        this.position = position;
-        this.possibleMoves = new ArrayList<Integer>();
-    }
 
     public ArrayList<Integer> listMoves(){
 
